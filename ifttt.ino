@@ -6,8 +6,8 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "mnmkn";  
-const char* password = "user.100"; 
+const char* ssid     = "";  
+const char* password = ""; 
 int button= 2;             // D1 pin of ESP12E board
 //int LED =16;               // D0 pin of ESP12E board
 const char* host = "maker.ifttt.com";     //IFTTT channel address
@@ -40,7 +40,7 @@ void loop() {
        return;
        }
        // We now create a URI for the request
-       String url = "/trigger/email/with/key/dBNSgnkAj4qLww8us4Y-kl";   //our link to trigger the event with special key and event name 
+       String url = "/trigger/trigger/with/key/key";   //our link to trigger the event with special key and event name 
   
        // This will send the request to the server
        client.print(String("GET ") + url + " HTTP/1.1\r\n" + "Host: " + host + "\r\n" + "Connection: close\r\n\r\n");  // GET request 
