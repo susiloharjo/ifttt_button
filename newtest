@@ -71,7 +71,7 @@ void setup() {
        return;
        }
        // We now create a URI for the request
-       String url = "/trigger/email/with/key/dBNSgnkAj4qLww8us4Y-kl";   //our link to trigger the event with special key and event name 
+       String url = "/trigger/eventname/with/key/keyifttt";   //our link to trigger the event with special key and event name 
   
        // This will send the request to the server
        client.print(String("GET ") + url + " HTTP/1.1\r\n" + "Host: " + host + "\r\n" + "Connection: close\r\n\r\n");  // GET request 
